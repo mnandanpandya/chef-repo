@@ -1,3 +1,11 @@
+#
+# Cookbook Name:: base-server
+# Recipe:: deployer
+#
+# Copyright 2014, Maruti Nandan Pandya
+#
+# All rights reserved - Do Not Redistribute
+#
 
 group "deployer" do
   gid 1100

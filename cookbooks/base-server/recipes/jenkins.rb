@@ -1,4 +1,11 @@
-## very basic Jenkins setup
+#
+# Cookbook Name:: base-server
+# Recipe:: jenkins
+#
+# Copyright 2014, Maruti Nandan Pandya
+#
+# All rights reserved - Do Not Redistribute
+#
 
 yum_repository "jenkins" do
   description "Jenkins CI"

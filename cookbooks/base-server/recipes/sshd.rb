@@ -1,3 +1,11 @@
+#
+# Cookbook Name:: base-server
+# Recipe:: sshd
+#
+# Copyright 2014, Maruti Nandan Pandya
+#
+# All rights reserved - Do Not Redistribute
+#
 
 service "sshd" do
   supports :status => true, :restart => true, :reload => true
