@@ -8,4 +8,5 @@
 
 
 .bundle
-cache/*
+cache/*.kitchen/
+.kitchen.local.yml
