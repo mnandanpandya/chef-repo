@@ -12,14 +12,13 @@ class Chef::Recipe
 end
 
 netrc_auth = find_data_keys "netrc_auth"
-template "/home/deployer/.netrc" do
-  source 'netrc-deployer.erb'
+template "/home/intel/.netrc" do
+  source 'netrc.erb'
   mode '0600'
-  owner 'deployer'
-  group 'deployer'
+  owner 'intel'
+  group 'intel'
   variables(
     :login =>    netrc_auth['login'],
     :password => netrc_auth['password']
-    )
-  not_if { File.exists? "#{@name}.override" }
+  )
 end
