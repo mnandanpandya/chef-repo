@@ -1,0 +1,1 @@
+# default['jenkins']['master']['mirror'] = 'http://example.lan'

@@ -1,0 +1,9 @@
+source "https://api.berkshelf.com"
+
+metadata
+
+
+cookbook 'build-essential', '~> 1.4.2'
+cookbook 'cron', '~> 1.4.0'
+
+cookbook 'ohai', '~> 1.1.12'

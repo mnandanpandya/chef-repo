@@ -1,0 +1,33 @@
+DEPENDENCIES
+  build-essential (~> 1.4.2)
+  cron (~> 1.4.0)
+  myjenkins
+    path: .
+    metadata: true
+  ohai (~> 1.1.12)
+
+GRAPH
+  apt (5.0.0)
+    compat_resource (>= 12.14.7)
+  build-essential (1.4.4)
+  chef_gem (0.1.0)
+  compat_resource (12.16.0)
+  cron (1.4.3)
+  java (1.39.0)
+    apt (>= 0.0.0)
+  jenkins (2.6.0)
+    apt (>= 2.0)
+    runit (~> 1.7)
+    yum (~> 3.0)
+  myjenkins (0.1.0)
+    apt (= 5.0.0)
+    jenkins (= 2.6.0)
+    rvm (~> 0.9.1)
+  ohai (1.1.12)
+  packagecloud (0.2.3)
+  runit (1.7.8)
+    packagecloud (>= 0.0.0)
+  rvm (0.9.4)
+    chef_gem (>= 0.0.0)
+    java (>= 0.0.0)
+  yum (3.11.0)
