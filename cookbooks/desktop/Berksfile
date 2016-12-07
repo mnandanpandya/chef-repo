@@ -1,0 +1,6 @@
+source "https://api.berkshelf.com"
+
+metadata
+
+cookbook 'myjenkins', path: '../myjenkins'
+cookbook 'base-server', path: '../base-server'

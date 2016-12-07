@@ -1,0 +1,27 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+  # name: chef_zero
+  environments_path: ../../environments
+  client_rb:
+    environment: development
+  cookbook_path: ../cookbooks
+  roles_path: ../../roles
+
+
+platforms:
+  - name: trusty64
+  - name: centos-7.2
+
+suites:
+  - name: default
+    data_bags_path: "../../data_bags"
+    # encrypted_data_bag_secret_key_path: "encrypted_data_bag_secret"
+    run_list:
+      - recipe[desktop]
+      - recipe[desktop::clone_repos]
+    attributes:
+

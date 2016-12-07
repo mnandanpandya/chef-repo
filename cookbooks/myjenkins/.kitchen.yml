@@ -16,10 +16,10 @@ provisioner:
 
 
 platforms:
-  - name: ubuntu-14.04
+  - name: trusty64
     driver:
       network:
-        - ["private_network", { type: "dhcp" }]
+        - ["private_network", { ip: "192.168.10.231" }]
         - ["forwarded_port", {guest: 8080, host: 8081}]
 
 suites:
@@ -29,6 +29,7 @@ suites:
     run_list:
      - recipe[apt]
      - recipe[myjenkins::jenkins]
+     - recipe[myjenkins::users]
     # includes:
     #   - 'ubuntu-14.04'
     attributes:

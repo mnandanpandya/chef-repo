@@ -10,3 +10,4 @@
 .bundle
 cache/*.kitchen/
 .kitchen.local.yml
+.kitchen/
