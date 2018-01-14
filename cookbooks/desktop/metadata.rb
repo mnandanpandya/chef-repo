@@ -5,3 +5,6 @@ license          ''
 description      'Installs/Configures desktop'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
+
+
+depends 'sublime-text', '~> 0.1.5'
