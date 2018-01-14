@@ -6,3 +6,4 @@ gem 'berkshelf', '3.1.3'
 
 gem "test-kitchen"
 gem "kitchen-vagrant"
+gem 'rest-client'

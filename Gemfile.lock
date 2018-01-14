@@ -228,6 +228,7 @@ DEPENDENCIES
   chef (~> 11.12)
   kitchen-vagrant
   knife-ec2 (= 0.8.0)
+  rest-client
   test-kitchen
 
 BUNDLED WITH
