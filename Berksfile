@@ -7,3 +7,6 @@ cookbook 'build-essential', '~> 1.4.2'
 cookbook 'python', '~> 1.4.0'
 cookbook 'mysql', '~> 5.5.4'
 cookbook 'apt'
+
+
+cookbook 'sublime-text', '~> 0.1.5'

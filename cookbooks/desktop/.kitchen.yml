@@ -12,7 +12,7 @@ provisioner:
 
 
 platforms:
-  - name: trusty64
+  - name: ubuntu/trusty64
   - name: centos-7.2
 
 suites:
